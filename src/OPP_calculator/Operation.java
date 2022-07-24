@@ -12,6 +12,12 @@ public class Operation {
     int division;
 
     //Métodos
+
+    public void escogerOperacion() {
+
+
+        System.out.println("Escoge una de las siguientes operaciones:");
+    }
     public void insertarNumeros() {
 
         numero1 = Integer.parseInt(JOptionPane.showInputDialog("Inserte un número"));
@@ -34,10 +40,19 @@ public class Operation {
         division = numero1/numero2;
     }
 
-    public void mostrarResultados() {
+    public void resultadoSuma() {
         System.out.println("La suma es: " +suma);
+    }
+
+    public void resultadoResta() {
         System.out.println("La resta es: " +resta);
+    }
+
+    public void resultadoMultiplicacion() {
         System.out.println("La multiplicación es: " +multiplicacion);
+    }
+
+    public void resultadoDivision (){
         System.out.println("La división es: " +division);
     }
 }
